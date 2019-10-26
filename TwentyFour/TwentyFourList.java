@@ -75,7 +75,7 @@ public class TwentyFourList
                 dived.addOp("/");
                 dived.addNum(numbers.get(i));
                 temp.remove(i); //"remove" this number so next call of "solve" will exclude it 
-                solve(temp, goalSum, added); //
+                solve(temp, goalSum, added); //recurses to next number and operation 
                 solve(temp, goalSum, subbed);
                 solve(temp, goalSum, dived); 
                 if(canDiv)
